@@ -2,13 +2,11 @@ package br.com.fiap.ecommerce.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.modelmapper.ModelMapper;
-
-import br.com.fiap.ecommerce.model.Cliente;
 
 @Setter
 @Getter
 public class ClienteResponseDto {
+
 	private Long id;
 	private String nome;
     private String cep;

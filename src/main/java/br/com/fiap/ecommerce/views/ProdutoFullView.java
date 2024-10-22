@@ -1,8 +1,8 @@
 package br.com.fiap.ecommerce.views;
 
-import java.math.BigDecimal;
-
 import org.springframework.beans.factory.annotation.Value;
+
+import java.math.BigDecimal;
 
 public interface ProdutoFullView {
     String getNome();

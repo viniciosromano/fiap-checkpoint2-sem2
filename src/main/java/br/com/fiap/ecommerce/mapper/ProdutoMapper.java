@@ -1,19 +1,18 @@
 package br.com.fiap.ecommerce.mapper;
 
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import br.com.fiap.ecommerce.dtos.ProdutoRequestCreateDto;
 import br.com.fiap.ecommerce.dtos.ProdutoRequestUpdateDto;
 import br.com.fiap.ecommerce.dtos.ProdutoResponseDto;
 import br.com.fiap.ecommerce.model.Produto;
+import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class ProdutoMapper {    
     
-    @Autowired
-    private ModelMapper modelMapper;
+    private final ModelMapper modelMapper;
 
     public ProdutoResponseDto toDto(Produto produto) {
         return modelMapper.map(produto, ProdutoResponseDto.class);

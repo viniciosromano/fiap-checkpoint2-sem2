@@ -8,8 +8,8 @@ import java.math.BigDecimal;
 @Setter
 @Getter
 public class ProdutoRequestUpdateDto {
+
 	private String nome;
 	private BigDecimal valor;
-
 
 }

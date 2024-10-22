@@ -1,17 +1,18 @@
 package br.com.fiap.ecommerce.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import java.util.List;
-import java.util.Optional;
 import br.com.fiap.ecommerce.model.Pedido;
 import br.com.fiap.ecommerce.repository.PedidoRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class PedidoService {
 
-    @Autowired
-    private PedidoRepository pedidoRepository;
+    private final PedidoRepository pedidoRepository;
 
     public List<Pedido> list() {
         return pedidoRepository.findAll();

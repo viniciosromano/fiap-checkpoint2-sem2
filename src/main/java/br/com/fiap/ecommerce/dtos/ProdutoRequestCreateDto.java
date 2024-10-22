@@ -7,6 +7,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ProdutoRequestCreateDto {
+
     private String nome;
 	private BigDecimal valor;
+
 }

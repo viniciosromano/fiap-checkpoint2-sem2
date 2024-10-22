@@ -1,14 +1,12 @@
 package br.com.fiap.ecommerce.service;
 
-import java.util.List;
-import java.util.Optional;
-
-import org.springframework.stereotype.Service;
-
-import br.com.fiap.ecommerce.dtos.ProdutoResponseDto;
 import br.com.fiap.ecommerce.model.Produto;
 import br.com.fiap.ecommerce.repository.ProdutoRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

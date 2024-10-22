@@ -4,14 +4,14 @@ import br.com.fiap.ecommerce.dtos.ClienteRequestCreateDto;
 import br.com.fiap.ecommerce.dtos.ClienteRequestUpdateDto;
 import br.com.fiap.ecommerce.dtos.ClienteResponseDto;
 import br.com.fiap.ecommerce.model.Cliente;
+import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class ClienteMapper {
-    @Autowired
-    private ModelMapper modelMapper;
+    private final ModelMapper modelMapper;
     public ClienteResponseDto toDto(Cliente cliente) {
         return modelMapper.map(cliente, ClienteResponseDto.class);
     }

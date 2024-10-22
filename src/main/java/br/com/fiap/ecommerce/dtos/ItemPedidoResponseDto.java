@@ -1,16 +1,14 @@
 package br.com.fiap.ecommerce.dtos;
 
-import java.math.BigDecimal;
-
 import lombok.Getter;
 import lombok.Setter;
-import org.modelmapper.ModelMapper;
 
-import br.com.fiap.ecommerce.model.ItemPedido;
+import java.math.BigDecimal;
 
 @Setter
 @Getter
 public class ItemPedidoResponseDto {
+
 	private Long id;
 	private Long idPedido;
     private Long idProduto;

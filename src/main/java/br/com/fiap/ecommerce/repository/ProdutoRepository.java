@@ -7,8 +7,7 @@ import org.springframework.stereotype.Repository;
 import br.com.fiap.ecommerce.model.Produto;
 
 @Repository
-public interface ProdutoRepository 
-	extends JpaRepository<Produto, Long> {
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
 	<T> T findByNome(String nome, Class<T> type);
 	<T> List<T> findAllByNome(String nome, Class<T> type);
